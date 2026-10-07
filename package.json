@@ -1,0 +1,49 @@
+{
+  "name": "@statespace-tech/sdk",
+  "version": "0.1.1",
+  "description": "Run Statespace A/B tests on functions and values in TypeScript and JavaScript applications",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && vitest run",
+    "format": "prettier --write src test",
+    "format:check": "prettier --check src test",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/statespace-tech/typescript-sdk.git"
+  },
+  "homepage": "https://statespace.com",
+  "keywords": ["ab-testing", "experimentation", "webassembly", "agents"],
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@bytecodealliance/jco-transpile": "^0.15.0",
+    "@bytecodealliance/preview2-shim": "^0.26.0",
+    "@marcbachmann/cel-js": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "prettier": "3.9.6",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  }
+}
