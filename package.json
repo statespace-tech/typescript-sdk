@@ -27,11 +27,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/statespace-tech/typescript-sdk.git"
+    "url": "git+https://github.com/statespace-tech/typescript-sdk.git"
   },
   "homepage": "https://statespace.com",
-  "keywords": ["ab-testing", "experimentation", "webassembly", "agents"],
+  "keywords": [
+    "ab-testing",
+    "experimentation",
+    "webassembly",
+    "agents"
+  ],
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=20"
   },

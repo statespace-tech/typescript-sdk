@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/statespace-tech/typescript-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/statespace-tech/typescript-sdk/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-007ec6?style=flat-square)](LICENSE)
+[![npm](https://img.shields.io/npm/v/@statespace-tech/sdk?style=flat-square)](https://www.npmjs.com/package/@statespace-tech/sdk)
 
 Run Statespace A/B tests on functions and values in Node.js applications. Each subject is
 assigned to a group, reads that group's parameters, and falls back to your current code
@@ -12,7 +13,7 @@ everywhere else.
 Install the SDK with npm. It requires Node.js 20 or later.
 
 ```shell
-npm install "github:statespace-tech/typescript-sdk#v0.1.1"
+npm install @statespace-tech/sdk
 ```
 
 Set an API key from `ssp key create --preset runtime`. Locally, the SDK uses your `ssp login` session.
